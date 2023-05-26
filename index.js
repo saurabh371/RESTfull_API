@@ -4,7 +4,7 @@ require("./Database/database");
 const Student = require("./models/students");
 const StudentRouter = require("./routers/students");
 const app = express();
-const port = process.env.port || 34419;
+const port = process.env.port || 4000;
 
 app.use(express.json()); 
 app.use(StudentRouter);
