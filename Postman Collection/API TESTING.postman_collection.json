@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "af832dd9-463a-4c86-a35d-b00897581943",
+		"name": "API TESTING",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27166389"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\" : \"Aman\",\r\n  \"email\" : \"aman@gmail.com\",\r\n  \"phone\" : \"1998887776\",\r\n  \"address\" : \"Noida\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/students/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"students",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:4000/students/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"students",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Shubham Sharma\",\r\n    \"email\": \"shubham@gmail.com\",\r\n    \"phone\": 8356846396,\r\n    \"address\": \"Madhya Pradesh\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4000/students/64707902f9ad451b4914c825",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"students",
+						"64707902f9ad451b4914c825"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Shubham Sharma\",\r\n    \"email\": \"shubham@gmail.com\",\r\n    \"phone\": 8356846396,\r\n    \"address\": \"Madhya Pradesh\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4000/students/64707902f9ad451b4914c825",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"students",
+						"64707902f9ad451b4914c825"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
