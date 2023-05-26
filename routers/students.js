@@ -14,7 +14,7 @@ router.post("/students", async (req, res) =>{
   })
   
   
-  //read registered Student
+ 
   router.get("/students", async (req, res) => {
   
     try{
@@ -24,8 +24,8 @@ router.post("/students", async (req, res) =>{
       res.status(400).send(e);
     }
   })
-  
-  //get indivisual student
+ 
+
   
   router.get("/students/:id", async (req, res) => {
     try{
@@ -44,7 +44,7 @@ router.post("/students", async (req, res) =>{
   
   })
   
-  //update the student data by id 
+ 
   
   router.patch("/students/:id", async (req, res)=>{
     try{
@@ -56,7 +56,7 @@ router.post("/students", async (req, res) =>{
     }
   });
   
-  //Delete students data
+  
   
   router.delete("/students/:id" , async(req,res) => {
     try{
