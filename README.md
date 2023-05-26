@@ -13,13 +13,13 @@ API will run on port 4000
 ## Step 3: Test the API endpoints
 This API manage the student's information. 
 
-name:  Name of Student
+- name:  Name of Student
 
-email: Email of the Student
+- email: Email of the Student
 
-phone: Phone Numbe of the Student
+- phone: Phone Numbe of the Student
 
-address: Address of the Student
+- address: Address of the Student
 
 
 # API testing with Postman 
