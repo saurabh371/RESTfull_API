@@ -35,7 +35,6 @@ const studentSchema = new mongoose.Schema({
 
 })
 
-//create collection
 
 const Student = new mongoose.model("Student", studentSchema);
 
